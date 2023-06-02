@@ -16,3 +16,27 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.backgroundColor {
+    background-color: #9a90bf;
+}
+
+.fontMenu {
+    color:black;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link:focus{
+    color: white !important;
+}
+
+
