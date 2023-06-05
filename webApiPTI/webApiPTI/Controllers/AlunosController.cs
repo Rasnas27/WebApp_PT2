@@ -23,6 +23,10 @@ namespace webApiPTI.Controllers
         {
             var alunosResult = await GetAlunos();
             var alunos = alunosResult.Value; 
+            foreach(Aluno aluno in alunos)
+            {
+                aluno.DefinirPagamentoRecorrente(aluno.Pagamento.Day);
+            }
             return View(alunos);
         }
 
@@ -30,7 +34,7 @@ namespace webApiPTI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Aluno>>> GetAlunos()
         {
-            return await _context.Aluno.ToListAsync();
+           return await _context.Aluno.ToListAsync();
         }
 
         // GET: api/Aluno/5
@@ -47,10 +51,10 @@ namespace webApiPTI.Controllers
             return aluno;
         }
 
-        [HttpGet("{Nome}")]
+        [HttpGet("Alunos/FindAlunoByName/{nome}")]
         public async Task<ActionResult<Aluno>> GetAlunoByName(string nome)
         {
-            var aluno = await _context.Aluno.FindAsync(nome);
+            var aluno = await _context.Aluno.FirstOrDefaultAsync(a => a.Nome == nome);
 
             if (aluno == null)
             {
@@ -68,7 +72,7 @@ namespace webApiPTI.Controllers
             _context.Aluno.Add(aluno);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetAlunoById), new { id = aluno.Id_Aluno }, aluno);
+            return RedirectToAction("Alunos");
         }
 
         // PUT: api/Aluno/5
@@ -102,8 +106,9 @@ namespace webApiPTI.Controllers
         }
 
         // DELETE: api/Aluno/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteAluno(int id)
+        [HttpDelete]
+        [Route("/Alunos/ExcluirAluno/{id}")]
+        public async Task<IActionResult> ExcluirAluno(int id)
         {
             var aluno = await _context.Aluno.FindAsync(id);
             if (aluno == null)
@@ -114,7 +119,7 @@ namespace webApiPTI.Controllers
             _context.Aluno.Remove(aluno);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return RedirectToPage("Alunos");
         }
 
         private bool AlunoExists(int id)

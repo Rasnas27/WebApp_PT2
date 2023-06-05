@@ -1,0 +1,54 @@
+﻿@model Aluno
+
+<div class="modal fade" id="modalAdicionar" tabindex="-1" role="dialog" aria-labelledby="modalAdicionarLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalAdicionarLabel">Adicionar Aluno</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form asp-action="PostAluno">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="Nome" asp-for="Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" class="form-control" id="telefone" name="Telefone" asp-for="Telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="Email" asp-for="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nascimento">Data de Nascimento</label>
+                        <input type="date" class="form-control" id="nascimento" name="Nascimento" asp-for="Nascimento" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="profissao">Profissão</label>
+                        <input type="text" class="form-control" id="profissao" name="Profissao" asp-for="Profissao" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pagamento">Data de Pagamento</label>
+                        <input type="date" class="form-control" id="pagamento" name="Pagamento" asp-for="Pagamento" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpf">CPF</label>
+                        <input type="number" class="form-control" id="cpf" name="CPF" asp-for="Cpf" required>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="apagarDados()">Fechar</button>
+                        <button type="submit" class="btn btn-primary" id="btnSalvarAluno">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/tabela.js" asp-append-version="true"></script>
+
+

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dd4agtJ0ME2zzkCU7vTruF9AuhoW1T0/EX2hhgHGgIE=",
+  "Hash": "J5KACB13oXXdQ2p3tjHbJhq/NBsp3H7X12Hp7wvQNbo=",
   "Source": "webApiPTI",
   "BasePath": "_content/webApiPTI",
   "Mode": "Default",
@@ -68,6 +68,23 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\wwwroot\\css\\tabela.css",
+      "SourceId": "webApiPTI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\wwwroot\\",
+      "BasePath": "_content/webApiPTI",
+      "RelativePath": "css/tabela.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\tabela.css"
+    },
+    {
       "Identity": "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\wwwroot\\favicon.ico",
       "SourceId": "webApiPTI",
       "SourceType": "Discovered",
@@ -100,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\wwwroot\\js\\tabela.js",
+      "SourceId": "webApiPTI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\wwwroot\\",
+      "BasePath": "_content/webApiPTI",
+      "RelativePath": "js/tabela.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\tabela.js"
     },
     {
       "Identity": "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

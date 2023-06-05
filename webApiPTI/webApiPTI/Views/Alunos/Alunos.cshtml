@@ -3,25 +3,49 @@
 @{
     ViewData["Title"] = "Alunos";
 }
+<link rel="stylesheet" href="~/css/tabela.css" asp-append-version="true" />
 
-<table class="table">
-    <thead class="thead-dark">
-        <tr>
-            <th scope="col">Nome</th>
-            <th scope="col">Telefone</th>
-            <th scope="col">E-mail</th>
-            <th scope="col">Aniversário</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var aluno in Model)
-        {
+<div class="container">
+    <table class="table">
+        <thead class="thead-dark">
             <tr>
-                <td>@aluno.Nome</td>
-                <td>@aluno.Telefone</td>
-                <td>@aluno.Email</td>
-                <td>@aluno.Nascimento</td>
+                <th scope="col">Nome</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Aniversário</th>
+                <th scope="col">Pagamento</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var aluno in Model)
+            {
+                <tr>
+                    <td>@aluno.Nome</td>
+                    <td>@aluno.Telefone</td>
+                    <td>@aluno.Email</td>
+                    <td>@aluno.Nascimento.ToString("d 'de' MMMM 'de' yyyy")</td>
+                    <td>@aluno.Pagamento.ToString("dd-MM")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="container">
+    <div class="row justify-content-end mt-4">
+        <div class="col-auto">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAdicionar">Adicionar</button>
+        </div>
+        <div class="col-auto">
+            <form asp-action="ExcluirAluno">
+               <button type="submit" class="btn btn-danger" onclick="excluirAluno()" id="btnExcluir">Excluir</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<partial name="AdicionarAlunos" model="new Aluno()" />
+
+<script src="~/js/tabela.js" asp-append-version="true"></script>

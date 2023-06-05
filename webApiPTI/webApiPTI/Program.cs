@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using webApiPTI.Controllers;
 using webApiPTI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -27,12 +28,29 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    name: "deleteAluno",
+    pattern: "Alunos/ExcluirAluno/{id}",
+    defaults: new { controller = "Alunos", action = "ExcluirAluno" });
+
+
+app.MapControllerRoute(
+    name: "getAlunosByName",
+    pattern: "Alunos/FindAlunoByName/{nome}",
+    defaults: new { controller = "Alunos", action = "GetAlunoByName" });
 
 app.MapControllerRoute(
     name: "alunos",
-    pattern: "{controller=Alunos}/{action=Alunos}/{id?}");
+    pattern: "Alunos/Alunos/{id?}",
+    defaults: new { controller = "Alunos", action = "Alunos" });
+
+app.MapControllerRoute(
+    name: "postAluno",
+    pattern: "Alunos/PostAluno",
+    defaults: new { controller = "Alunos", action = "PostAluno" });
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 
 app.Run();

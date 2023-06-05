@@ -1,0 +1,19 @@
+﻿tbody>tr:hover {
+    background-color: #fee2e2;
+}
+tbody > tr {
+    cursor: pointer;
+}
+
+.selected-row {
+    background-color: #fee2e2;
+}
+
+.modal-header .close {
+    display: none;
+}
+
+.btn-primary {
+    background-color: #9a90bf !important;
+    border: none !important;
+}
