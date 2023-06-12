@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "JELhzOFOyeaG2DnfvMv0j0nCbWj2bt7sGqB8QL7g5zw=",
+=======
+  "Hash": "J5KACB13oXXdQ2p3tjHbJhq/NBsp3H7X12Hp7wvQNbo=",
+>>>>>>> fa9e132e93f8b265f727890ec3321b49e94f0b03
   "Source": "webApiPTI",
   "BasePath": "_content/webApiPTI",
   "Mode": "Default",
@@ -68,7 +72,28 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\joaod\\source\\repos\\WebApp_PT2\\webApiPTI\\webApiPTI\\wwwroot\\favicon.ico",
+=======
+      "Identity": "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\wwwroot\\css\\tabela.css",
+      "SourceId": "webApiPTI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\wwwroot\\",
+      "BasePath": "_content/webApiPTI",
+      "RelativePath": "css/tabela.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\tabela.css"
+    },
+    {
+      "Identity": "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\wwwroot\\favicon.ico",
+>>>>>>> fa9e132e93f8b265f727890ec3321b49e94f0b03
       "SourceId": "webApiPTI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\joaod\\source\\repos\\WebApp_PT2\\webApiPTI\\webApiPTI\\wwwroot\\",
@@ -102,7 +127,28 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\joaod\\source\\repos\\WebApp_PT2\\webApiPTI\\webApiPTI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+=======
+      "Identity": "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\wwwroot\\js\\tabela.js",
+      "SourceId": "webApiPTI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\wwwroot\\",
+      "BasePath": "_content/webApiPTI",
+      "RelativePath": "js/tabela.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\tabela.js"
+    },
+    {
+      "Identity": "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+>>>>>>> fa9e132e93f8b265f727890ec3321b49e94f0b03
       "SourceId": "webApiPTI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\joaod\\source\\repos\\WebApp_PT2\\webApiPTI\\webApiPTI\\wwwroot\\",

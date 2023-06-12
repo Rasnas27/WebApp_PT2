@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\joaod\source\repos\WebApp_PT2\webApiPTI\webApiPTI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/joaod/source/repos/WebApp_PT2/webApiPTI/webApiPTI/Views/Alunos/AdicionarAlunos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9zXEFkaWNpb25hckFsdW5vcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joaod/source/repos/WebApp_PT2/webApiPTI/webApiPTI/Views/Alunos/Alunos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9zXEFsdW5vcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/joaod/source/repos/WebApp_PT2/webApiPTI/webApiPTI/Views/Alunos/Criar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9zXENyaWFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

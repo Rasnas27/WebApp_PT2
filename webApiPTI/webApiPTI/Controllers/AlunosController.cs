@@ -27,10 +27,12 @@ namespace webApiPTI.Controllers
         {
             var alunosResult = await _alunoRepositorio.GetAllAsync();
             return View(alunosResult);
+
         }
 
         public IActionResult Criar()
         {
+
             return View();
         }
 
@@ -59,6 +61,5 @@ namespace webApiPTI.Controllers
                 return View(aluno);
             }
         }
-
     }
 }

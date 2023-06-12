@@ -9,12 +9,20 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\joaod\\source\\repos\\WebApp_PT2\\webApiPTI\\webApiPTI\\wwwroot\\css\\tabela.css",
+      "PackagePath": "staticwebassets\\css\\tabela.css"
+    },
+    {
       "Id": "C:\\Users\\joaod\\source\\repos\\WebApp_PT2\\webApiPTI\\webApiPTI\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
       "Id": "C:\\Users\\joaod\\source\\repos\\WebApp_PT2\\webApiPTI\\webApiPTI\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\joaod\\source\\repos\\WebApp_PT2\\webApiPTI\\webApiPTI\\wwwroot\\js\\tabela.js",
+      "PackagePath": "staticwebassets\\js\\tabela.js"
     },
     {
       "Id": "C:\\Users\\joaod\\source\\repos\\WebApp_PT2\\webApiPTI\\webApiPTI\\wwwroot\\lib\\bootstrap\\LICENSE",

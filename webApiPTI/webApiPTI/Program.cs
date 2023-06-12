@@ -1,5 +1,4 @@
-using Microsoft.EntityFrameworkCore;
-using System;
+
 using webApiPTI.Data;
 using webApiPTI.Repositorios;
 using webApiPTI.Repositorios.Interfaces;
@@ -47,10 +46,5 @@ app.UseSession();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Login}/{action=Index}/{id?}");
-
-app.MapControllerRoute(
-    name: "alunos",
-    pattern: "{controller=Alunos}/{action=Alunos}/{id?}");
-
 
 app.Run();

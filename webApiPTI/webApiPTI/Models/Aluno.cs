@@ -46,5 +46,23 @@ namespace webApiPTI.Models
 
 
 
+
+        //public void DefinirPagamentoRecorrente(int diaPagamento)
+        //{
+        //    var hoje = DateTime.Today;
+        //    var mesAtual = new DateTime(hoje.Year, hoje.Month, diaPagamento);
+
+        //    // Verifica se o dia de pagamento já passou no mês atual
+        //    if (hoje > mesAtual)
+        //    {
+        //        // Avança para o próximo mês
+        //        Pagamento = mesAtual.AddMonths(1);
+        //    }
+        //    else
+        //    {
+        //        // Mantém o mês atual
+        //        Pagamento = mesAtual;
+        //    }
+        //}
     }
 }
