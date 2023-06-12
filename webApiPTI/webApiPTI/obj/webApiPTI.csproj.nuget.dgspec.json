@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\webApiPTI.csproj": {}
+    "C:\\Users\\joaod\\source\\repos\\WebApp_PT2\\webApiPTI\\webApiPTI\\webApiPTI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\webApiPTI.csproj": {
+    "C:\\Users\\joaod\\source\\repos\\WebApp_PT2\\webApiPTI\\webApiPTI\\webApiPTI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\webApiPTI.csproj",
+        "projectUniqueName": "C:\\Users\\joaod\\source\\repos\\WebApp_PT2\\webApiPTI\\webApiPTI\\webApiPTI.csproj",
         "projectName": "webApiPTI",
-        "projectPath": "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\webApiPTI.csproj",
-        "packagesPath": "C:\\Users\\Basis Tecnologia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Basis Tecnologia\\OneDrive\\Área de Trabalho\\WebAPP_PT2\\webApiPTI\\webApiPTI\\obj\\",
+        "projectPath": "C:\\Users\\joaod\\source\\repos\\WebApp_PT2\\webApiPTI\\webApiPTI\\webApiPTI.csproj",
+        "packagesPath": "C:\\Users\\joaod\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaod\\source\\repos\\WebApp_PT2\\webApiPTI\\webApiPTI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Basis Tecnologia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\joaod\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,9 +22,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {},
-          "https://element.basis.com.br/repository/inmetro-nuget/": {}
+          "https://nexus.anac.gov.br/nexus/repository/nuget-group/": {},
+          "https://nexus.anac.gov.br/nexus/repository/nuget-hosted/": {}
         },
         "frameworks": {
           "net6.0": {
@@ -94,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

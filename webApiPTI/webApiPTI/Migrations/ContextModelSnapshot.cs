@@ -31,8 +31,9 @@ namespace webApiPTI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_Aluno"), 1L, 1);
 
-                    b.Property<int>("Cpf")
-                        .HasColumnType("int")
+                    b.Property<string>("Cpf")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("nrCpf");
 
                     b.Property<string>("Email")
@@ -53,6 +54,9 @@ namespace webApiPTI.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("dtPagamento");
 
+                    b.Property<int?>("ProfessorId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Profissao")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)")
@@ -64,6 +68,8 @@ namespace webApiPTI.Migrations
                         .HasColumnName("nrTelefone");
 
                     b.HasKey("Id_Aluno");
+
+                    b.HasIndex("ProfessorId");
 
                     b.ToTable("Aluno");
                 });
@@ -137,8 +143,9 @@ namespace webApiPTI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_Professor"), 1L, 1);
 
-                    b.Property<int>("Cpf")
-                        .HasColumnType("int")
+                    b.Property<string>("Cpf")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("nrCpf");
 
                     b.Property<string>("Login")
@@ -159,6 +166,15 @@ namespace webApiPTI.Migrations
                     b.HasKey("Id_Professor");
 
                     b.ToTable("Professores");
+                });
+
+            modelBuilder.Entity("webApiPTI.Models.Aluno", b =>
+                {
+                    b.HasOne("webApiPTI.Models.Professor", "Professor")
+                        .WithMany()
+                        .HasForeignKey("ProfessorId");
+
+                    b.Navigation("Professor");
                 });
 
             modelBuilder.Entity("webApiPTI.Models.Aula", b =>

@@ -1,0 +1,22 @@
+﻿@model Professor
+
+<a class="navbar-brand" style="color:white;" asp-area="" asp-controller="Home" asp-action="Index">Poyares Idiomas</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="navbar-collapse collapse d-sm-inline-flex backgroundColor">
+    <ul class="navbar-nav flex-grow-1 d-flex justify-content-end  fontMenu">
+        <li class="nav-item">
+            <a class="nav-link text-dark" id="agenda" asp-controller="Home" asp-action="Index">Agenda</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" id="alunos"  asp-controller="Alunos" asp-action="Index">Alunos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="color: white"  asp-controller="Alunos" asp-action="Index">Olá, @Model.Nome</a>
+        </li>
+    </ul>
+    <div class="nav-item">
+        <a class="btn btn-outline-light mx-md-5" asp-controller="Login" asp-action="Sair" >Logout</a>
+    </div>
+</div>

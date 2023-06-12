@@ -1,0 +1,83 @@
+﻿@model Professor
+
+@{
+    Layout = "_LayoutDeslogado";
+}
+
+
+<section class="vh-98" style="background-color: #9a90bf; border-radius: 8px">
+    <div class="container py-5 h-100 ">
+        <div class="row h-100 d-flex justify-content-center">
+            <div class="col col-xl-10 ">
+                <div class="card " style="border-radius: 1rem;">
+                    <div class="row g-0 d-flex justify-content-center">
+                        <div class="col-md-6 col-lg-7 d-flex align-items-center ">
+                            <div class="card-body p-4 p-lg-5 text-black ">
+
+                                <form asp-action="Criar" asp-controller="Professor" method="post">
+
+                                    <div class="d-flex align-items-center mb-3 pb-1">
+                                        <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                                        <span class="h1 fw-bold mb-0">Registre-se</span>
+                                    </div>
+
+                                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Preencha os campos indicados</h5>
+
+                                    <div class="form-outline mb-4">
+                                        @Html.ValidationMessageFor(x => x.Nome)
+                                        <input type="text" asp-for="Nome" id="form2Example17" class="form-control form-control-lg" required />
+                                        <label class="form-label" for="form2Example17">Nome</label>
+                                        
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        @Html.ValidationMessageFor(x => x.Cpf)
+                                        <input type="text" asp-for="Cpf" id="inputCpf" class="form-control form-control-lg" required />
+                                        <label class="form-label" for="form2Example27">Cpf</label>
+                                        
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        @Html.ValidationMessageFor(x => x.Login)
+                                        <input type="text" asp-for="Login" id="login" class="form-control form-control-lg" required />
+                                        <label class="form-label" for="form2Example27">Login</label>
+                                        
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        @Html.ValidationMessageFor(x => x.Senha)
+                                        <input type="password" asp-for="Senha" id="senha" class="form-control form-control-lg" required />
+                                        <label class="form-label" for="form2Example27">Senha</label>
+                                        
+                                    </div>
+
+                                    <div class="pt-1 mb-4">
+                                        <button class="btn btn-success btn-lg btn-block" type="submit">Login</button>
+                                        <a class="btn btn-dark btn-lg btn-block" asp-controller="Login" asp-action="Index">Voltar</a>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@section Scripts {
+
+
+    <script src="~/lib/jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#inputCpf').mask('000.000.000-00', { reverse: true });
+        });
+    </script>
+}
+
+

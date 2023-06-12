@@ -13,7 +13,7 @@ namespace webApiPTI.Models
 
         [Display(Name = "Cpf")]
         [Column("nrCpf")]
-        public int Cpf { get; set; }
+        public string Cpf { get; set; }
 
         [Display(Name = "Nome")]
         [Column("Nome")]
@@ -38,6 +38,12 @@ namespace webApiPTI.Models
         [Display(Name = "Email")]
         [Column("nmEmail")]
         public string Email { get; set; }
+
+        [ForeignKey("Professor")]
+        public virtual int? ProfessorId { get; set; }
+
+        public virtual Professor? Professor { get; set; }
+
 
 
     }
