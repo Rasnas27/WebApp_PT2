@@ -14,7 +14,7 @@ namespace webApiPTI.Models
 
         [Display(Name = "Cpf")]
         [Column("nrCpf")]
-        public int Cpf { get; set; }
+        public string Cpf { get; set; }
 
         [Display(Name = "Nome")]
         [Column("Nome")]

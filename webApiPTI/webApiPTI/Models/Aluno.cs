@@ -13,7 +13,7 @@ namespace webApiPTI.Models
 
         [Display(Name = "Cpf")]
         [Column("nrCpf")]
-        public int Cpf { get; set; }
+        public string Cpf { get; set; }
 
         [Display(Name = "Nome")]
         [Column("Nome")]
@@ -39,28 +39,30 @@ namespace webApiPTI.Models
         [Column("nmEmail")]
         public string Email { get; set; }
 
-        public Aluno()
-        {
-            Nascimento = DateTime.MinValue; // Definindo um valor padrão para Nascimento
-            Pagamento = DateTime.MinValue; // Definindo um valor padrão para Pagamento
-        }
+        [ForeignKey("Professor")]
+        public virtual int? ProfessorId { get; set; }
 
-        public void DefinirPagamentoRecorrente(int diaPagamento)
-        {
-            var hoje = DateTime.Today;
-            var mesAtual = new DateTime(hoje.Year, hoje.Month, diaPagamento);
+        public virtual Professor? Professor { get; set; }
 
-            // Verifica se o dia de pagamento já passou no mês atual
-            if (hoje > mesAtual)
-            {
-                // Avança para o próximo mês
-                Pagamento = mesAtual.AddMonths(1);
-            }
-            else
-            {
-                // Mantém o mês atual
-                Pagamento = mesAtual;
-            }
-        }
+
+
+
+        //public void DefinirPagamentoRecorrente(int diaPagamento)
+        //{
+        //    var hoje = DateTime.Today;
+        //    var mesAtual = new DateTime(hoje.Year, hoje.Month, diaPagamento);
+
+        //    // Verifica se o dia de pagamento já passou no mês atual
+        //    if (hoje > mesAtual)
+        //    {
+        //        // Avança para o próximo mês
+        //        Pagamento = mesAtual.AddMonths(1);
+        //    }
+        //    else
+        //    {
+        //        // Mantém o mês atual
+        //        Pagamento = mesAtual;
+        //    }
+        //}
     }
 }
